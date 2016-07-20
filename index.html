@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+    	<meta name="description" content="The Good, The Bad & The Ugly is a website showcasing good code with varying levels of design">
+
+		<title>The Good, The Bad & The Ugly</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/good.css">
+
+		<script   src="https://code.jquery.com/jquery-3.0.0.js"   integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="   crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="JS/script.js"></script>
+
+		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+		<script type="text/javascript">
+   		(function(){
+      	emailjs.init("user_5z1TEBcyvgfxLBSi0yfMn");
+   		})();
+		</script>
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<header>
+			<div class="container">
+				<h1 id="theGood">The Good-</h1>
+				<h1 id="theBad">The Bad-</h1>
+				<h1 id="theUgly">The Ugly</h1>
+
+				<div class="menu-nav">
+					<nav>
+						<a href="#">Home</a>
+						<a href="#">About</a>
+						<a href="#">Location</a>
+						<a href="#">Contact Us</a>
+					</nav>
+				</div>
+
+				<div class="mobile-menu-button">Menu</div>
+
+			<div id="drop-menu">
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Locations</a>
+				<a href="#">Contact Us</a>
+			</div>
+
+		</header>
+
+		<section id="main">
+			<div class="container">
+				<h2>Insta-Australia</h2>
+
+				<p>Instagram is a social media platform where users can post and share images of their lives, locations and inspirations.</p>
+
+				<p>Look up any capital Australian city and view what fellow instagramers have snapshot in your city! View the laneways, food, cafes, culture and events of any destination.</p>
+
+				<img id="instagramExample" src="images/instagram-example.jpg" alt="Example Insatgram Images">
+
+				<form id="handleForm" action="" method="post" enctype="multipart/for-data">
+					<fieldset><label>Search</label>
+					<select name="city">
+						<option value="Adelaide">Adelaide</option>
+						<option value="Brisbane">Brisbane</option>
+						<option value="Canberra">Canberra</option>
+						<option value="Darwin">Darwin</option>
+						<option value="Gold Coast">Gold Coast</option>
+						<option value="Hobart">Hobart</option>
+						<option value="Melbourne">Melbourne</option>
+						<option value="Perth">Perth</option>
+						<option value="Sydney">Sydney</option>
+					</select>
+					</fieldset>
+
+					<fieldset>
+						<input type="submit" value="Submit" id="submit-btn">
+					</fieldset>
+				</form>
+
+				<div class="blurb">
+				
+				<div id="melbourneBlurb">
+					<h2>Melbourne is the capital city of Victoria. A city of stately 19th-century buildings and tree-lined boulevards. Yet at its centre is the strikingly modern Federation Square development, with plazas, bars, restaurants and cultural events along the Yarra River. In Southbank, the Melbourne Arts Precinct is site of Arts Centre Melbourne – a performing arts complex – and National Gallery of Victoria, displaying Australian and Indigenous art.</h2>
+					<a href="https://www.instagram.com/visitmelbourne/">See More & Follow @visitmelbourne</a>
+				</div>
+
+				<div id="sydneyBlurb">
+					<h2>Sydney is the capital city of New South Wales. One of Australia's largest cities, is best known for its harbourfront Opera House, with a distinctive sail-like design. Massive Darling Harbour and Circular Quay are hubs of waterside life, with the towering, arched Harbour Bridge and esteemed Royal Botanic Gardens nearby. Sydney Tower’s 268m glass viewing platform, the Skywalk, offers 360-degree views of the city, harbour and suburbs.</h2>
+					<a href="https://www.instagram.com/sydney/"> See More & Follow @sydney</a>
+				</div>
+
+					<div id="canberraBlurb">
+						<h2>Canberra is the national capital city of Australia. Surrounded by forest, farmland and nature reserves, it earns its nickname, the "Bush Capital.” The city's focal point is Lake Burley Griffin, filled with sailboats and kayaks. On the lakeshore is the massive, strikingly modern Parliament House, as well as museums including the National Gallery, known for its indigenous art collections.</h2>
+						<a href="https://www.instagram.com/visitcanberra/">See More & Follow @visitcanberra</a>
+					</div>
+
+					<div id="goldcoastBlurb">
+						<h2>Gold Coast is a popular city of Queensland. From the iconic Surfers Paradise beach to the dining precincts of Main Beach and Broadbeach and out to the lush, green hinterland, there’s a new experience waiting for you at every turn on the Gold Coast. Theme parks, world-renowned beaches and year-round sunshine are just a few of the reasons 10.5 million visitors flock to the Gold Coast each year.</h2>
+						<a href="https://www.instagram.com/visitgoldcoast/">See More & Follow @visitgoldcoast</a>
+					</div>
+
+					<div id="brisbaneBlurb">
+						<h2>Brisbane is the capital city of Queensland. A big, modern city set on the Brisbane River. Clustered in its South Bank cultural precinct are institutions including Queensland Museum and Sciencentre, with noted interactive exhibitions, and Queensland Gallery of Modern Art, among Australia's major contemporary art museums. Looming over the city is Mt. Coot-tha, site of sprawling Brisbane Botanic Gardens, with panoramic views from its summit.</h2>
+						<a href="https://www.instagram.com/visitbrisbane/">See More & Follow @visitbrisbane</a>
+					</div>
+
+					<div id="hobartBlurb">
+						<h2>Hobart is the capital city of Tasmania. The city sits on the River Derwent off the coast of Australia. At its fashionable Salamanca Place, old sandstone warehouses host galleries and cafes, and a popular market is held on Saturdays. Nearby is Battery Point, a historic district with narrow lanes and colonial-era cottages. The city's backdrop is 1,270m-high Mt. Wellington, a hiking and cycling destination offering sweeping views.</h2>
+						<a href="https://www.instagram.com/tasmania/">See More & Follow @tasmania</a>
+					</div>
+
+					<div id="perthBlurb">
+						<h2>Perth is the capital city of Western Australia. The city sits where the Swan River meets the southwest coast. Its suburbs lie along sandy beaches, and the huge, riverside Kings Park and Botanic Garden on Mt. Eliza offer sweeping views of the city. The Perth Cultural Centre houses the state ballet and opera companies, and occupies its own central precinct, including a theatre, art galleries and the Western Australian Museum.</h2>
+						<a href="https://www.instagram.com/perthcityaus/">See More & Follow @perthcityaus</a>
+					</div>
+
+					<div id="adelaideBlurb">
+						<h2>Adelaide is the capital city of South Australia. Its ring of parkland on the River Torrens is home to renowned museums such as the Art Gallery of South Australia, displaying expansive collections including noted Indigenous art, and the South Australian Museum, devoted to natural history. The city's Adelaide Festival is an annual international arts gathering with spin-offs including fringe and film events.</h2>
+						<a href="https://www.instagram.com/southaustralia/">See More & Follow @southaustralia</a>
+					</div>
+
+					<div id="darwinBlurb">
+						<h2>Darwin is the capital city of Nothern Territory.A gateway to Kakadu National Park, Australia’s largest. It's known as a laid-back blend of frontier outpost and modern city. At its heart is the Smith Street pedestrian mall, notable for shops selling Aboriginal art and crafts, South Sea pearls, opals and diamonds. The liveliest part of the waterfront is reachable from the Central Business District via the Esplanade or an elevated walkway.</h2>
+						<a href="https://www.instagram.com/city_of_darwin/">See More & Follow @city_of_darwin</a>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<footer>
+
+			<h3>© Copyright 2016 Phoebe Dunn - Front End Web Development Project </h3>
+
+		</footer>
+
+
+	</body>
+
+</html>
